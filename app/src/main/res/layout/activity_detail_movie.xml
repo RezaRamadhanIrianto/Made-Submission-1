@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMovie"
+
+    android:background="@drawable/gradient"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:id="@+id/layout"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/detail_photo"
+            />
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:text="TITLE MOVIE"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout2"
+        android:orientation="vertical"
+        android:layout_below="@id/layout"
+        android:background="#393939"
+        >
+
+        <TextView
+            android:textStyle="italic"
+            android:fontFamily="monospace"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="#f5c000"
+            android:textSize="20sp"
+            android:text="Description"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/detail_desc"
+            android:layout_below="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Lorem Ipsum Dolor Sit AMeT"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
